@@ -1,0 +1,125 @@
+header {
+      box-shadow: 0 4px 6px -6px #222;
+      padding: 2px 8px 2px 8px;
+}
+
+nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: end;
+      padding-right: 164px;
+}
+
+nav img {
+      width: 140px;
+      padding-left: 150px;
+}
+
+/* Code for Burgermenu */
+li {
+      list-style: none;
+}
+
+li a {
+      text-decoration: none;
+      color: black;
+      font-size: 48px;
+      background-image: linear-gradient(to right, rgb(145, 255, 0), rgb(145, 255, 0) 50%, #000 50%);
+      background-size: 200% 100%;
+      background-position: -100%;
+      display: inline-block;
+      padding: 5px 0;
+      position: relative;
+      background-clip: border-box;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      transition: all 0.3s ease-in-out;
+}
+
+li a:before {
+      content: '';
+      background: rgb(145, 255, 0);
+      position: absolute;
+      bottom: -3px;
+      left: 0;
+      width: 0;
+      height: 5px;
+      transition: all 0.3s ease-in-out;
+}
+
+li a:hover {
+      background-position: 0;
+}
+
+li a:hover::before {
+      width: 100%;
+}
+
+header a {
+      color: black;
+      text-decoration: none;
+      font-size: 24px;
+      background-image: linear-gradient(to right, orangered, orangered 50%, #000 50%);
+      background-size: 200% 100%;
+      background-position: -100%;
+      display: inline-block;
+      padding: 5px 0;
+      position: relative;
+      background-clip: border-box;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      transition: all 0.3s ease-in-out;
+}
+
+header a:before {
+      content: '';
+      background: orangered;
+      position: absolute;
+      bottom: -3px;
+      left: 0;
+      width: 0;
+      height: 5px;
+      transition: all 0.3s ease-in-out;
+}
+
+header a:hover {
+      background-position: 0;
+}
+
+header a:hover::before {
+      width: 100%;
+}
+
+.navbar {
+      display: flex;
+      justify-content: space-between;
+      /* align-items: center; */
+}
+
+#nav-menu {
+      display: flex;
+      justify-content: space-between;
+      align-items: end;
+      gap: 34px;
+      margin-bottom: 0;
+      margin-top: 0;
+}
+
+#hamburger {
+      display: none;
+      cursor: pointer;
+}
+
+.bar {
+      display: block;
+      width: 25px;
+      height: 3px;
+      margin: 5px auto;
+      -webkit-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+      background-color: black;
+}
+
+.header-logo-small {
+      display: none;
+}
